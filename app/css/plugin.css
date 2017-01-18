@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* font-family: "Digital-7"; */
+@font-face {
+  font-family: "Digital-7";
+  src: url("../fonts/Digital7/digital-7.eot");
+  src: local("☺"), url("../fonts/Digital7/digital-7.woff") format("woff"), url("../fonts/Digital7/digital-7.ttf") format("truetype"), url("../fonts/Digital7/digital-7.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* font-family: "BasicSansSerif7"; */
+@font-face {
+  font-family: 'BasicSansSerif7';
+  src: url("../fonts/BasicSansSerif7BasicSansSerif7/BasicSansSerif7.eot");
+  src: url("../fonts/BasicSansSerif7/BasicSansSerif7.eot?#iefix") format("embedded-opentype"), url("../fonts/BasicSansSerif7/BasicSansSerif7.woff") format("woff"), url("../fonts/BasicSansSerif7/BasicSansSerif7.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #efefef;
+  font-family: "RobotoLight";
+  cursor: default; }
+
+.calculator {
+  width: 500px;
+  background-color: #9ac960;
+  border: 1px solid #000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 10px; }
+
+.calculator input {
+  width: 92%;
+  height: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: 5px;
+  font-size: 50px;
+  color: #000;
+  font-family: "Digital-7", Arial;
+  text-align: right;
+  margin-bottom: 0; }
+
+#input {
+  margin-bottom: 20px; }
+
+#history-input {
+  font-size: 30px; }
+
+button {
+  border: 1px solid #bbb;
+  background-color: #eee;
+  height: 90px;
+  width: 90px;
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
+  margin: 2px; }
+
+button:hover {
+  background-color: #7ea54d;
+  border-color: #7ea54d; }
+
+#btn-equal {
+  width: 184px; }

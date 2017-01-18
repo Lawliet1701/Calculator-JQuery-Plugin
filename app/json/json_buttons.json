@@ -1,0 +1,134 @@
+{
+ "buttons": [
+    {
+        "id": "btn-MR",
+        "value": "MR",
+        "text": "MR"
+    }, 
+    {
+        "id": "btn-Madd",
+        "value": "M+",
+        "text": "M+"
+    },
+    {
+        "id": "btn-Msub",
+        "value": "M-",
+        "text": "M-"
+    },
+    {
+        "id": "btn-bsp",
+        "value": "bsp",
+        "text": "&larr;"
+    },
+    {
+        "id": "btn-clean",
+        "value": "C",
+        "text": "C"
+    }, 
+    {
+        "id": "btn7",
+        "value": "7",
+        "text": "7"
+    },
+    {
+        "id": "btn8",
+        "value": "8",
+        "text": "8"
+    },
+    {
+        "id": "btn9",
+        "value": "9",
+        "text": "9"
+    },
+    {
+        "id": "btn-div",
+        "value": "/",
+        "text": "/"
+    },
+    {
+        "id": "btn-pow",
+        "value": "pow",
+        "text": "x&sup2;"
+    },
+    {
+        "id": "btn4",
+        "value": "4",
+        "text": "4"
+    },
+    {
+        "id": "btn5",
+        "value": "5",
+        "text": "5"
+    },
+    {
+        "id": "btn6",
+        "value": "6",
+        "text": "6"
+    },
+    {
+        "id": "btn-mult",
+        "value": "*",
+        "text": "*"
+    },
+    {
+        "id": "btn-sqrt",
+        "value": "sqrt",
+        "text": "&radic;"
+    },
+    {
+        "id": "btn1",
+        "value": "1",
+        "text": "1"
+    },
+    {
+        "id": "btn2",
+        "value": "2",
+        "text": "2"
+    },
+    {
+        "id": "btn3",
+        "value": "3",
+        "text": "3"
+    },
+    {
+        "id": "btn-sub",
+        "value": "-",
+        "text": "-"
+    },  
+    {
+        "id": "btn-prc",
+        "value": "%",
+        "text": "%"
+    },
+    {
+        "id": "btn0",
+        "value": "0",
+        "text": "0"
+    },
+    {
+        "id": "btn-dot",
+        "value": ".",
+        "text": "."
+    },
+    {
+        "id": "btn-add",
+        "value": "+",
+        "text": "+"
+    },
+    {
+        "id": "btn-equal",
+        "value": "=",
+        "text": "="
+    }         
+  ],
+    
+  "inputs": [
+    {
+     "id":"history-input"   
+    },   
+    {
+     "id":"input"   
+    } 
+  ]
+
+}
