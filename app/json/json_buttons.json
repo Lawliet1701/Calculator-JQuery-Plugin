@@ -1,6 +1,11 @@
 {
  "buttons": [
     {
+        "id": "btn-MC",
+        "value": "MC",
+        "text": "MC"
+    }, 
+    {
         "id": "btn-MR",
         "value": "MR",
         "text": "MR"
@@ -14,11 +19,6 @@
         "id": "btn-Msub",
         "value": "M-",
         "text": "M-"
-    },
-    {
-        "id": "btn-bsp",
-        "value": "bsp",
-        "text": "&larr;"
     },
     {
         "id": "btn-clean",
@@ -41,14 +41,14 @@
         "text": "9"
     },
     {
-        "id": "btn-div",
-        "value": "/",
-        "text": "/"
+        "id": "btn-bsp",
+        "value": "bsp",
+        "text": "&larr;"
     },
     {
-        "id": "btn-pow",
-        "value": "pow",
-        "text": "x&sup2;"
+        "id": "btn-prc",
+        "value": "%",
+        "text": "%"
     },
     {
         "id": "btn4",
@@ -66,9 +66,9 @@
         "text": "6"
     },
     {
-        "id": "btn-mult",
-        "value": "*",
-        "text": "*"
+        "id": "btn-pow",
+        "value": "pow",
+        "text": "x&sup2;"
     },
     {
         "id": "btn-sqrt",
@@ -91,14 +91,14 @@
         "text": "3"
     },
     {
-        "id": "btn-sub",
-        "value": "-",
-        "text": "-"
-    },  
-    {
-        "id": "btn-prc",
-        "value": "%",
-        "text": "%"
+        "id": "btn-mult",
+        "value": "*",
+        "text": "*"
+    },
+     {
+        "id": "btn-div",
+        "value": "/",
+        "text": "/"
     },
     {
         "id": "btn0",
@@ -115,6 +115,11 @@
         "value": "+",
         "text": "+"
     },
+    {
+        "id": "btn-sub",
+        "value": "-",
+        "text": "-"
+    }, 
     {
         "id": "btn-equal",
         "value": "=",

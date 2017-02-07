@@ -8,8 +8,6 @@
         var $this = $(this);
  
         var idCalc = '#calculator' + ++count + " ";
-
-        $('head').append('<link rel="stylesheet" href="css/plugin.css">');   //пофіксити к-ть разів
         
         $this.append("<div id='calculator" + count + "' class='calculator'></div>");
 
@@ -37,6 +35,7 @@
 
                     result: 0,
                     lastOperation: "",
+                    memory: 0,
                     
                     printNumber: function(){
                         var newInput = input.val() + $(this).attr("value");
@@ -94,6 +93,39 @@
                         calc.printResult();     
                         calc.result = 0;
                     },
+                    
+                    madd: function() {
+                        calc.lastOperation = "m+";
+                        calc.calculate(); 
+                        calc.lastOperation = "";
+                    },
+                    
+                    msub: function() {
+                        calc.lastOperation = "m-";
+                        calc.calculate(); 
+                        calc.lastOperation = "";
+                    },
+                    
+                    mread: function() {
+                        calc.lastOperation = "mr";
+                        calc.calculate();
+                        calc.lastOperation = "";
+                        calc.printResult();
+                    },
+                    
+                    mclean: function() {
+                        calc.lastOperation = "mc";
+                        calc.calculate();
+                        calc.lastOperation = "";
+                        calc.printResult();
+                    },
+                    
+                    dot: function() {
+                         if(input.val().indexOf(".") == -1){
+                             var newInput = input.val() + ".";
+                             input.val(newInput);
+                         } 
+                    },
 
                     calculate: function () {
 
@@ -109,7 +141,10 @@
                                     calc.result /= 100; break;
                             case "sq": calc.result = Math.sqrt(input.val()); break;
                             case "pw2": calc.result = Math.pow(input.val(), 2); break;
-
+                            case "m+": calc.memory += +historyInput.val(); break;
+                            case "m-": calc.memory -= historyInput.val(); break;
+                            case "mr": calc.result = calc.memory; break;
+                            case "mc": calc.memory = 0; calc.result = 0; break;           
                         }
 
                     },
@@ -128,7 +163,7 @@
                     printResult: function () {
                         input.val("");
                         historyInput.val(calc.result + calc.lastOperation);
-                    }
+                    }  
                 };
 
                 $(idCalc + "#btn-clean").on('click', calc.clean);
@@ -141,7 +176,11 @@
                 $(idCalc + "#btn-sqrt").on('click', calc.sqrt);
                 $(idCalc + "#btn-pow").on('click', calc.power2);
                 $(idCalc + "#btn-bsp").on('click', calc.cleanLastNumber);
-                $(idCalc + "#btn-dot").on('click', calc.printNumber);
+                $(idCalc + "#btn-dot").on('click', calc.dot);
+                $(idCalc + "#btn-Madd").on('click', calc.madd);
+                $(idCalc + "#btn-Msub").on('click', calc.msub);
+                $(idCalc + "#btn-MR").on('click', calc.mread);
+                $(idCalc + "#btn-MC").on('click', calc.mclean);
                 
                 for (var i = 0; i < 10; i++){
                     $(idCalc + "#btn" +i).on('click', calc.printNumber);
